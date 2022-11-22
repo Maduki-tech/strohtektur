@@ -9,12 +9,12 @@ export default function Header() {
     const router = useRouter();
     const { t } = useTranslation("common");
     return (
-        <header className="flex justify-between bg-white h-16 items-center px-6">
+		<header className="flex justify-between bg-white h-16 items-center px-2 md:px-6">
             <Link href="/">
-                <div className="text-4xl font-bold">Strohtektur</div>
+				<div className="text-2xl lg:text-4xl font-bold">Strohtektur</div>
             </Link>
             <Link href="/nowLindo">
-                <div className="">N.O.W. Lindow</div>
+                <div className="text-xs md:text-lg">N.O.W. Lindow</div>
             </Link>
             <div className=" flex gap-4 items-center">
                 <Link href="/support">
