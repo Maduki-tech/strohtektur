@@ -25,10 +25,10 @@ export default function Home() {
             <main className="flex flex-col bg-yellow-400 border-y-2 border-y-black ">
                 <section className="mt-52 px-6 flex flex-col gap-4 bg-yellow-400 ">
                     <h1 className="text-6xl font-bold">N.O.W. Lindow</h1>
-                    <h2 className="text-5xl ">
+                    <h2 className="text-4xl ">
                         Nachhaltig . Ökologisch. Wiederverwendbar
                     </h2>
-                    <h2 className="text-4xl">in Lindow an den drei Seen</h2>
+                    <h2 className="text-3xl">in Lindow an den drei Seen</h2>
 
                     <h3 className="text-2xl">
                         Das richtige Haus,

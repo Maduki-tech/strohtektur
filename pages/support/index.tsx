@@ -24,7 +24,7 @@ export default function index() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-5 px-6 gap-4">
+				<div className="grid md:grid-cols-5 px-6 gap-4">
                     <div className="flex flex-col justify-center items-center bg-white/50 px-4 py-8 gap-6 rounded-lg">
                         <div className="max-w-sm text-center">
                             High Five Strohballen die wir dank Dir kaufen
@@ -60,9 +60,9 @@ export default function index() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 justify-items-center mt-6 mb-10">
-                    <div className="w-2/3 bg-white/50 p-4 h-56">
-                        <p>
+				<div className="grid md:grid-cols-2 justify-items-center mt-6 mb-10 gap-10">
+					<div className="md:w-2/3 bg-white/50 p-4 md:h-56 flex flex-col">
+                        <p className="max-w-xs">
                             Spende Dein Beitrag auf folgenges Bankkonto und
                             hinterlass uns eine Email im Verwendungszweck damit
                             wir Dich kontaktieren können.
@@ -71,13 +71,13 @@ export default function index() {
                         <p>Inhaber: Strohtektur GbR</p>
                         <p> IBAN:DE00 0000 0000 0000 0000 00</p>
                         <p>BIC/SWIFT: AAAAA</p>
-                        <p>
+                        <p className="max-w-xs">
                             Verwendungszweck: Spende für Strohhaus,
                             deinemail@mail.com
                         </p>
                     </div>
 
-                    <div className="w-2/3 bg-white/50 p-4 h-56 flex flex-col">
+					<div className="md:w-2/3 bg-white/50 p-4 md:h-56 flex flex-col">
                         <Image
                             src={Paypal}
                             width={200}
