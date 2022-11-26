@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="max-h-fit flex justify-around bg-white py-4 items-center">
             <div className="text-xs">
-                <div>Kontakt</div>
+                <div className="font-bold">Kontakt</div>
                 <div>Strohtektur GbR</div>
                 <div>info@strohtektur.de</div>
                 <div>0170 308 4202 </div>

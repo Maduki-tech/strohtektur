@@ -11,7 +11,7 @@ export default function Header() {
     return (
 		<header className="flex justify-between bg-white h-16 items-center px-2 md:px-6">
             <Link href="/">
-				<div className="text-2xl lg:text-4xl font-bold">Strohtektur</div>
+				<div className="text-2xl lg:text-4xl font-bold font-serif">Strohtektur</div>
             </Link>
             <Link href="/nowLindo">
                 <div className="text-xs md:text-lg">N.O.W. Lindow</div>
@@ -19,7 +19,8 @@ export default function Header() {
             <div className=" flex gap-4 items-center">
                 <Link href="/support">
                     <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
-                        {t("supportUs")}
+						Unterstütz uns!
+                        {/* {t("supportUs")} */}
                     </div>
                 </Link>
                 <div>

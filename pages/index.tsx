@@ -1,11 +1,10 @@
 import Head from "next/head";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import { useState } from "react";
-import { useRouter } from "next/router";
-import Flag from "react-world-flags";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Image from "next/image";
+import Stroh from "../public/background.jpg";
 
 export default function Home() {
     const { t } = useTranslation("common");
@@ -20,33 +19,43 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-			<Header/>
+            <Header />
 
-            <main className="flex flex-col bg-yellow-400 border-y-2 border-y-black ">
-                <section className="mt-52 px-6 flex flex-col gap-4 bg-yellow-400 ">
-                    <h1 className="text-6xl font-bold">N.O.W. Lindow</h1>
-                    <h2 className="text-4xl ">
-                        Nachhaltig . Ökologisch. Wiederverwendbar
-                    </h2>
-                    <h2 className="text-3xl">in Lindow an den drei Seen</h2>
-
-                    <h3 className="text-2xl">
-                        Das richtige Haus,
-                        <br />
-                        für Dich, für die Umwelt, für die Zukunft
-                    </h3>
-
-                    <div className="bg-black max-w-fit p-2">
-                        <h2 className="text-white">
-                            Sicher Dir die{" "}
-                            <span className="font-bold">ERSTE</span> Nacht
+            <main className="flex flex-col  border-y-2 border-y-black ">
+                <section className="pt-28 px-6 bg-stroh grid grid-cols-2">
+                    <div className="flex flex-col gap-4">
+                        <h1 className="text-6xl font-bold">N.O.W. Lindow</h1>
+                        <h2 className="text-4xl ">
+                            Nachhaltig . Ökologisch. Wiederverwendbar
                         </h2>
+                        <h2 className="text-3xl">in Lindow an den drei Seen</h2>
+
+                        <h3 className="text-2xl">
+                            Das richtige Haus,
+                            <br />
+                            für Dich, für die Umwelt, für die Zukunft
+                        </h3>
+
+                        <div className="bg-black max-w-fit p-2">
+                            <h2 className="text-white">
+                                Sicher Dir die{" "}
+                                <span className="font-bold">ERSTE</span> Nacht
+                            </h2>
+                        </div>
+                        <h4 className="text-xl animate-bounce hover:animate-none">
+                            Freiwillige Spenden bis zur ganzen Woche
+                        </h4>
                     </div>
-                    <h4 className="text-lg animate-bounce hover:animate-none">
-                        Freiwillige Spenden bis zur ganzen Woche
-                    </h4>
+                    <div className="mx-auto ">
+                        <Image
+                            src={Stroh}
+                            alt="Bild von Stroh"
+                            height={500}
+                            className="rounded-xl"
+                        />
+                    </div>
                 </section>
-                <section className="h-screen flex flex-col gap-4 justify-center items-center bg-yellow-400">
+                <section className="h-screen flex flex-col gap-4 justify-center items-center bg-stroh">
                     <div className="text-2xl text-center w-1/2 mb-20">
                         Schreib uns für mehr Info! wir halten dich auf dem
                         laufenden wie und wann das Haus gebaut wird!
@@ -60,14 +69,21 @@ export default function Home() {
                             Email Senden
                         </a>
                     </div>
+									<div className="flex gap-4">
                     <Link href="/support">
                         <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
                             N.O.W. Lindow
                         </div>
                     </Link>
-                </section>
-				<Footer/>
 
+                    <a target='_blank' href="https://goo.gl/maps/Q2wHyFSN4Yhk1G5M7">
+                        <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
+                            Maps
+                        </div>
+                    </a>
+					</div>
+                </section>
+                <Footer />
             </main>
         </div>
     );
