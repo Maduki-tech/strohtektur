@@ -22,28 +22,23 @@ export default function Home() {
             <Header />
 
             <main className="flex flex-col  border-y-2 border-y-black ">
-                <section className="pt-28 px-6 bg-stroh grid grid-cols-2">
+				<section className="pt-28 px-6 bg-stroh grid md:grid-cols-2 text-center md:text-left">
                     <div className="flex flex-col gap-4">
                         <h1 className="text-6xl font-bold">N.O.W. Lindow</h1>
                         <h2 className="text-4xl ">
-                            Nachhaltig . Ökologisch. Wiederverwendbar
+							{t("slogan")}
                         </h2>
-                        <h2 className="text-3xl">in Lindow an den drei Seen</h2>
-
                         <h3 className="text-2xl">
-                            Das richtige Haus,
-                            <br />
-                            für Dich, für die Umwelt, für die Zukunft
+							{t("slogan2")}
                         </h3>
 
-                        <div className="bg-black max-w-fit p-2">
-                            <h2 className="text-white">
-                                Sicher Dir die{" "}
-                                <span className="font-bold">ERSTE</span> Nacht
+						<div className="bg-black max-w-fit p-2 mx-auto md:mx-0">
+                            <h2 className="text-white text-3xl">
+								{t("callout")}
                             </h2>
                         </div>
                         <h4 className="text-xl animate-bounce hover:animate-none">
-                            Freiwillige Spenden bis zur ganzen Woche
+								{t("callout2")}
                         </h4>
                     </div>
                     <div className="mx-auto ">
@@ -56,33 +51,29 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="h-screen flex flex-col gap-4 justify-center items-center bg-stroh">
-                    <div className="text-2xl text-center w-1/2 mb-20">
-                        Schreib uns für mehr Info! wir halten dich auf dem
-                        laufenden wie und wann das Haus gebaut wird!
+					<div className="text-2xl text-center w-1/2 mb-10 md:mb-20">
+						<p>{t("textUs")}</p>
+						<span>{t("infoCallOut")}</span>
                     </div>
-                    <div className="flex gap-3 items-center">
+                    <div className="flex gap-4">
                         <a
                             href="mailto:info@strohtektur.de"
                             className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white"
                         >
-                            Email Senden
+                            Email
                         </a>
-                    </div>
-                    <div className="flex gap-4">
-                        <Link href="/support">
-                            <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
-                                N.O.W. Lindow
-                            </div>
-                        </Link>
+
+                        <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
+                            <Link href="/support">N.O.W. Lindow</Link>
+                        </div>
 
                         <a
                             target="_blank"
-							rel="noreferrer"
+                            rel="noreferrer"
                             href="https://goo.gl/maps/Q2wHyFSN4Yhk1G5M7"
+                            className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white"
                         >
-                            <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
-                                Maps
-                            </div>
+                            Maps
                         </a>
                     </div>
                 </section>

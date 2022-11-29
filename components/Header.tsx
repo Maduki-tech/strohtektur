@@ -14,13 +14,12 @@ export default function Header() {
 				<div className="text-2xl lg:text-4xl font-bold font-serif">Strohtektur</div>
             </Link>
             <Link href="/nowLindo">
-                <div className="text-xs md:text-lg">N.O.W. Lindow</div>
+                <div className="text-md md:text-xl">N.O.W. Lindow</div>
             </Link>
             <div className=" flex gap-4 items-center">
                 <Link href="/support">
                     <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
-						Unterstütz uns!
-                        {/* {t("supportUs")} */}
+                        {t("support")}
                     </div>
                 </Link>
                 <div>
@@ -29,16 +28,16 @@ export default function Header() {
                             <Flag
                                 code="de"
                                 onClick={() => setLangu("us")}
-                                width={50}
+                                width={30}
                                 className="hover:cursor-pointer"
                             />
                         </Link>
                     ) : (
                         <Link href={router.pathname} locale="de">
                             <Flag
-                                code="us"
+                                code="gb"
                                 onClick={() => setLangu("de")}
-                                width={50}
+                                width={30}
                                 className="hover:cursor-pointer"
                             />
                         </Link>
