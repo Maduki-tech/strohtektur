@@ -72,8 +72,6 @@ const Index:NextPage=()=> {
                             alt="Paypal Logo"
                         />
                         <p className="max-w-xs">{t("paypalMsg")}</p>
-                        <p>Strohtektur</p>
-                        <p>hello@strohtektur.de</p>
                         <p>{t("payPalZweck")}</p>
                     </div>
                 </div>

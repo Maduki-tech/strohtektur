@@ -21,7 +21,7 @@ const Header: NextPage = () => {
             </Link>
             <div className=" flex gap-4 items-center">
                 <Link href="/support">
-                    <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
+                    <div className="bg-stroh border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
                         {t("support")}
                     </div>
                 </Link>
