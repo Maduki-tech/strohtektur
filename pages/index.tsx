@@ -68,19 +68,23 @@ export default function Home() {
                             Email Senden
                         </a>
                     </div>
-									<div className="flex gap-4">
-                    <Link href="/support">
-                        <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
-                            N.O.W. Lindow
-                        </div>
-                    </Link>
+                    <div className="flex gap-4">
+                        <Link href="/support">
+                            <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
+                                N.O.W. Lindow
+                            </div>
+                        </Link>
 
-                    <a target='_blank' href="https://goo.gl/maps/Q2wHyFSN4Yhk1G5M7">
-                        <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
-                            Maps
-                        </div>
-                    </a>
-					</div>
+                        <a
+                            target="_blank"
+							rel="noreferrer"
+                            href="https://goo.gl/maps/Q2wHyFSN4Yhk1G5M7"
+                        >
+                            <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white mt-2">
+                                Maps
+                            </div>
+                        </a>
+                    </div>
                 </section>
                 <Footer />
             </main>
