@@ -17,6 +17,7 @@ module.exports = {
                     "NotoSans, sans-serif",
                     { fontFeatureSettings: '"cv11", "ss01"' },
                 ],
+				'recoleta': '"Recoleta", "regular"'
             },
         },
     },

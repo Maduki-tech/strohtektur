@@ -1,5 +1,5 @@
 import Head from "next/head";
-import useTranslation from 'next-translate/useTranslation'
+import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import Stroh from "../public/background.jpg";
 import { NextPage } from "next";
 
-const Home:NextPage = () => {
+const Home: NextPage = () => {
     const { t } = useTranslation("common");
     return (
         <div>
@@ -23,23 +23,25 @@ const Home:NextPage = () => {
             <Header />
 
             <main className="flex flex-col  border-y-2 border-y-black ">
-				<section className="pt-28 px-6 bg-stroh grid md:grid-cols-2 text-center md:text-left">
+                <section className="pt-28 px-6 bg-stroh grid md:grid-cols-2 text-center md:text-left">
                     <div className="flex flex-col gap-4">
                         <h1 className="text-6xl font-bold">N.O.W. Lindow</h1>
-                        <h2 className="text-4xl ">
-							{t("slogan")}
-                        </h2>
-                        <h3 className="text-2xl">
-							{t("slogan2")}
-                        </h3>
+                        <div>
+                            <h2 className="text-xl ">{t("slogan")}</h2>
+                            <h2 className="text-xl ">{t("slogan12")}</h2>
+                        </div>
+                        <div>
+                            <h3 className="text-3xl">{t("slogan2")}</h3>
+                            <h3 className="text-3xl">{t("slogan22")}</h3>
+                        </div>
 
-						<div className="bg-black max-w-fit p-2 mx-auto md:mx-0">
+                        <div className="bg-black/40 border-4 border-black max-w-fit p-2 mx-auto md:mx-0 mt-24">
                             <h2 className="text-white text-3xl">
-								{t("callout")}
+                                {t("callout")}
                             </h2>
                         </div>
                         <h4 className="text-xl animate-bounce hover:animate-none">
-								{t("callout2")}
+                            {t("callout2")}
                         </h4>
                     </div>
                     <div className="mx-auto ">
@@ -52,9 +54,9 @@ const Home:NextPage = () => {
                     </div>
                 </section>
                 <section className="h-screen flex flex-col gap-4 justify-center items-center bg-stroh">
-					<div className="text-2xl text-center w-1/2 mb-10 md:mb-20">
-						<p>{t("textUs")}</p>
-						<span>{t("infoCallOut")}</span>
+                    <div className="text-2xl text-center w-1/2 mb-10 md:mb-20">
+                        <p>{t("textUs")}</p>
+                        <span>{t("infoCallOut")}</span>
                     </div>
                     <div className="flex gap-4">
                         <a
@@ -65,7 +67,7 @@ const Home:NextPage = () => {
                         </a>
 
                         <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
-                            <Link href="/support">N.O.W. Lindow</Link>
+                            <Link href="/nowLindow">N.O.W. Lindow</Link>
                         </div>
 
                         <a
@@ -82,5 +84,5 @@ const Home:NextPage = () => {
             </main>
         </div>
     );
-}
+};
 export default Home;

@@ -12,16 +12,16 @@ const Header: NextPage = () => {
     return (
         <header className="flex justify-between bg-white h-16 items-center px-2 md:px-6">
             <Link href="/">
-                <div className="text-2xl lg:text-4xl font-bold font-serif">
+                <div className="text-2xl lg:text-4xl font-bold font-recoleta">
                     Strohtektur
                 </div>
             </Link>
-            <Link href="/nowLindo">
+            <Link href="/nowLindow">
                 <div className="text-md md:text-xl">N.O.W. Lindow</div>
             </Link>
             <div className=" flex gap-4 items-center">
                 <Link href="/support">
-                    <div className="bg-stroh border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
+                    <div className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white">
                         {t("support")}
                     </div>
                 </Link>
