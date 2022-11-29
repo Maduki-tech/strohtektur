@@ -61,7 +61,6 @@ export default function Home() {
                         laufenden wie und wann das Haus gebaut wird!
                     </div>
                     <div className="flex gap-3 items-center">
-                        <span>info@strohtektur.de</span>
                         <a
                             href="mailto:info@strohtektur.de"
                             className="border-black px-1 py-1 rounded-sm border-2 hover:bg-black hover:text-white"
