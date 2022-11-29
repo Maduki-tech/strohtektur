@@ -1,8 +1,9 @@
+import { NextPage } from "next";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import React from "react";
 
-export default function Footer() {
+const Footer: NextPage = () => {
     const { t } = useTranslation("common");
     return (
         <footer className="max-h-fit flex justify-around bg-white py-4 items-center">
@@ -19,4 +20,6 @@ export default function Footer() {
             </Link>
         </footer>
     );
-}
+};
+
+export default Footer;

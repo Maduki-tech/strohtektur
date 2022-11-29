@@ -1,12 +1,13 @@
 import Head from "next/head";
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation'
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import Stroh from "../public/background.jpg";
+import { NextPage } from "next";
 
-export default function Home() {
+const Home:NextPage = () => {
     const { t } = useTranslation("common");
     return (
         <div>
@@ -82,3 +83,4 @@ export default function Home() {
         </div>
     );
 }
+export default Home;

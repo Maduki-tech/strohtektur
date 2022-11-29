@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
@@ -5,7 +6,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Paypal from "../../public/paypal.png";
 
-export default function index() {
+const Index:NextPage=()=> {
     const { t } = useTranslation("common");
     return (
         <div className="">
@@ -81,3 +82,4 @@ export default function index() {
         </div>
     );
 }
+export default Index;

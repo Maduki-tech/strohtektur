@@ -1,17 +1,20 @@
+import { NextPage } from "next";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Flag from "react-world-flags";
 
-export default function Header() {
+const Header: NextPage = () => {
     const [langu, setLangu] = useState("de");
     const router = useRouter();
     const { t } = useTranslation("common");
     return (
-		<header className="flex justify-between bg-white h-16 items-center px-2 md:px-6">
+        <header className="flex justify-between bg-white h-16 items-center px-2 md:px-6">
             <Link href="/">
-				<div className="text-2xl lg:text-4xl font-bold font-serif">Strohtektur</div>
+                <div className="text-2xl lg:text-4xl font-bold font-serif">
+                    Strohtektur
+                </div>
             </Link>
             <Link href="/nowLindo">
                 <div className="text-md md:text-xl">N.O.W. Lindow</div>
@@ -46,4 +49,6 @@ export default function Header() {
             </div>
         </header>
     );
-}
+};
+
+export default Header;

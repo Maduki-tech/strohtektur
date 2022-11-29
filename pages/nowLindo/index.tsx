@@ -1,9 +1,10 @@
+import { NextPage } from "next";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
-export default function Index() {
+const Index: NextPage = () => {
     const { t } = useTranslation("common");
     return (
         <div>
@@ -29,3 +30,5 @@ export default function Index() {
         </div>
     );
 }
+
+export default Index;
