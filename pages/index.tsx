@@ -36,9 +36,11 @@ const Home: NextPage = () => {
                         </div>
 
                         <div className="bg-black/40 border-4 border-black max-w-fit p-2 mx-auto md:mx-0 mt-24">
-                            <h2 className="text-white text-3xl">
-                                {t("callout")}
-                            </h2>
+                            <Link href="/support">
+                                <h2 className="text-white text-3xl">
+                                    {t("callout")}
+                                </h2>
+                            </Link>
                         </div>
                         <h4 className="text-xl animate-bounce hover:animate-none">
                             {t("callout2")}

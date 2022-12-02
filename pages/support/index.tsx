@@ -55,16 +55,16 @@ const Index:NextPage=()=> {
                 </div>
 
                 <div className="grid md:grid-cols-2 justify-items-center mt-6 mb-10 gap-10">
-                    <div className="md:w-2/3 bg-white/50 p-4 md:h-96 flex flex-col rounded-lg">
+					<div className="md:w-2/3 bg-white/50 p-4 md:h-96 flex flex-col rounded-lg justify-center md:pl-20">
                         <p className="max-w-xs">{t("msg")}</p>
 
-                        <p>{t("inhaber")}</p>
-                        <p> IBAN:DE00 0000 0000 0000 0000 00</p>
-                        <p>BIC/SWIFT: AAAAA</p>
+                        <p className="max-w-xs">{t("inhaber")}</p>
+                        <p className="max-w-xs"> IBAN:DE00 0000 0000 0000 0000 00</p>
+                        <p className="max-w-xl">BIC/SWIFT: AAAAA</p>
                         <p className="max-w-xs">{t("zweck")}</p>
                     </div>
 
-                    <div className="md:w-2/3 bg-white/50 p-4 md:h-96 flex flex-col justify-center items-center rounded-lg">
+					<div className="md:w-2/3 bg-white/50 p-4 md:h-96 flex flex-col justify-center rounded-lg md:pl-20">
                         <Image
                             src={Paypal}
                             width={200}
